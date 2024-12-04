@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 3</title>
+    <style>
+      .block {
+        border: 2px solid blue;
+        padding: 10px;
+        margin: 5px 0;
+      }
+      .inline {
+        border: 1px dashed red;
+        padding: 5px;
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mark Tag</h1>
+    <p>This is <mark>important</mark> text</p>
+    <div>
+      <h2>This is Heading 2 inside a div</h2>
+      <p>This is a paragraph inside a div</p>
+    </div>
+
+    <h1>Inline vs Block-level Elements</h1>
+    <h2>Block-level Elements</h2>
+    <div class="block">
+      This is a <strong>block-level</strong> element (e.g., &lt;div&gt;).
+    </div>
+    <p class="block">
+      This is another <strong>block-level</strong> element (e.g., &lt;p&gt;).
+    </p>
+    <h3 class="block">
+      Heading tags like &lt;h1&gt;, &lt;h2&gt;, etc., are also block-level.
+    </h3>
+    <hr class="block" />
+
+    <h2>Inline Elements</h2>
+    <p>
+      This paragraph contains inline elements:
+      <span class="inline">This is a &lt;span&gt;.</span>
+      <a href="#" class="inline">This is a &lt;a&gt; (link).</a>
+      <strong class="inline">This is &lt;strong&gt;.</strong>
+      <em class="inline">This is &lt;em&gt;.</em>
+    </p>
+    <p>
+      Notice how inline elements stay within the flow of text and do not start
+      on a new line.
+    </p>
+
+    <h2>Visual Differences</h2>
+    <p>
+      Block elements (blue boxes) always start on a new line and take up the
+      full width of the container.
+    </p>
+    <p>
+      Inline elements (red dashed boxes) stay within the line and take up only
+      as much width as their content.
+    </p>
+    <a href="">Google</a>
+    <a href="">Facebook</a>
+
+    <p>Hello</p>
+    <p>World</p>
+
+    <div>
+      <h2>Span Tag</h2>
+      <p style="background-color: aqua; color: purple">
+        This is the first paragraph of the article.
+      </p>
+      <p>
+        This is the
+        <span style="background-color: aqua; color: purple"
+          >first paragraph</span
+        >
+        of the article.
+      </p>
+      <p>This is the second paragraph of the article.</p>
+    </div>
+
+    <h1>Registration Form</h1>
+    <form method="post">
+      <!-- Personal Information Section -->
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          required
+        /><br /><br />
+
+        <label for="dob">Date of Birth:</label><br />
+        <input type="date" id="dob" name="dob" required /><br /><br />
+      </fieldset>
+
+      <!-- Account Details Section -->
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          placeholder="At least 8 characters"
+          required
+        /><br /><br />
+
+        <label for="confirm_password">Confirm Password:</label><br />
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          minlength="8"
+          required
+        /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="30"
+          placeholder="Enter your message here"
+        ></textarea
+        ><br /><br />
+      </fieldset>
+
+      <!-- Preferences Section -->
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label>Gender:</label><br />
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label><br />
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label><br />
+        <input type="radio" id="other" name="gender" value="other" required />
+        <label for="other">Other</label><br /><br />
+
+        <label for="language">Preferred Language:</label><br />
+        <select name="language">
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+          <option value="french">French</option>
+          <option value="other">Other</option></select
+        ><br /><br />
+
+        <label>Subscription:</label><br />
+        <input type="checkbox" id="newsletter" name="newsletter" />
+        <label for="newsletter">Subscribe to our newsletter</label><br />
+        <input type="checkbox" id="updates" name="updates" />
+        <label for="updates">Receive updates about new features</label
+        ><br /><br />
+      </fieldset>
+
+      <!-- Submit Section -->
+      <fieldset>
+        <legend>Submit</legend>
+
+        <label for="file">Upload a Profile Picture:</label><br />
+        <input type="file" id="file" name="file" accept="image/*" /><br /><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
